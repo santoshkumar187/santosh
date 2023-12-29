@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My name is Santosh Kumar Ingole</h1>
+            <p>Web Developer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my portfolio! I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project" onclick="toggleProjectDetails(this)">
+                <h3>Project 1</h3>
+                <p>Description of Project 1. simple calculator,simple portfolio</p>
+                <div class="project-details">
+                    <p>Additional details about Project 1</p>
+                    
+                </div>
+            </div>
+            <div class="project" onclick="toggleProjectDetails(this)">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.
+                    explored with using javscript to make project functional
+                </p>
+                <div class="project-details">
+                    <p>Additional details about Project 2.</p>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact me</h2>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <label for="name">name:</label>
+                <input type="text" id="name" name="san" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="name" required>
+
+                <!-- Add more form fields as needed -->
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
